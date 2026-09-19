@@ -1,0 +1,12 @@
+[project]
+name = "prompteval-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=1.7.0",
+    "litellm>=1.101.0",
+    "python-dotenv>=1.2.3",
+    "streamlit>=1.64.0",
+]

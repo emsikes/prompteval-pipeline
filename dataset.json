@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Write a Python function that takes an AWS ARN string and extracts the service name from it. For example, given 'arn:aws:s3:::my-bucket' it should return 's3'.",
+    "format": "python",
+    "solution_criteria": "Function correctly parses ARN format, extracts the service component (3rd colon-separated field), handles edge cases like invalid ARNs, and returns string or appropriate error"
+  },
+  {
+    "task": "Create a JSON object representing an AWS IAM policy that allows read-only access to a specific S3 bucket named 'company-logs'. The policy should allow ListBucket and GetObject actions.",
+    "format": "json",
+    "solution_criteria": "Valid IAM policy structure with Version and Statement fields, correct Action array including s3:ListBucket and s3:GetObject, appropriate Resource ARN format for the bucket, Effect set to Allow"
+  },
+  {
+    "task": "Write a regular expression that validates AWS region names (e.g., 'us-east-1', 'eu-west-2', 'ap-southeast-1'). The pattern should match standard AWS region format.",
+    "format": "regex",
+    "solution_criteria": "Regex matches valid AWS region patterns with geographic area (us|eu|ap|sa|ca|me|af), direction (east|west|north|south|central|northeast|southeast), and number suffix, rejects invalid formats"
+  }
+]
