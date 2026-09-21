@@ -1,3 +1,13 @@
+---
+title: prompteval-pipeline
+emoji: 🔬
+colorFrom: blue
+colorTo: purple
+sdk: docker
+app_file: app.py
+pinned: false
+---
+
 # prompteval-pipeline
 
 ![Python](https://img.shields.io/badge/python-3.12+-blue?style=flat-square)
