@@ -31,6 +31,14 @@ A provider-agnostic prompt evaluation pipeline for structured output tasks. Auto
 
 ---
 
+## Live Demo
+
+[huggingface.co/spaces/emsikes/prompteval-pipeline](https://huggingface.co/spaces/emsikes/prompteval-pipeline)
+
+Bring your own Anthropic API key to run the pipeline. Enter it in the sidebar when prompted.
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -102,6 +110,8 @@ uv run main.py
 
 ### Python API
 
+Clone the repo and import directly from the local package:
+
 ```python
 from prompteval_pipeline import load_dataset, run_eval, compare_prompts
 
@@ -119,6 +129,8 @@ variants = {
 comparison = compare_prompts(dataset, variants)
 print(comparison["summary"])
 ```
+
+> PyPI publishing planned for v2.
 
 ---
 
@@ -177,6 +189,7 @@ Final score range: 0-10.
 
 ## Roadmap
 
+- PyPI package publishing
 - Manual model override in UI
 - Provider selector (OpenAI, Gemini, Bedrock)
 - Domain-specific dataset generation (Kubernetes, healthcare, security)
